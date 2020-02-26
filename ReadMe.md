@@ -8,4 +8,9 @@ A sample project setup for kafka using spring kafka (**used java12**)
 ### For producing a message
 You can `POST` a message to `/send` endpoint
 
-`curl -X POST http://localhost:9009/send -H "Content-Type: application/json" --data "{\"message\": \"this is the json body from outside World\"}"`
+```shell script
+curl -X POST \
+  http://localhost:9009/send \
+  -H "Content-Type: application/json" \
+  --data "{\"message\": \"This is the message\"}"
+```
